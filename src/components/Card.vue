@@ -15,7 +15,8 @@ const numeroFormato = (num: number) => {
     <div class="card-body">
       <h5 class="text-center">{{ pais.name }}</h5>
       <p class="text-center">
-        <img :src="pais.flag" :alt="`bandera-${pais.name}`" class="img-fluid w-50" />
+        <!-- <img :src="pais.flag" :alt="`bandera-${pais.name}`" class="img-fluid w-50" /> -->
+         Aquí iría la bandera de {{ pais.name }}. Pero el servicio de REST Countries ha dejado de funcionar y no puedo mostrarla.
       </p>
       <p class="card-text">
         <span class="badge badge-dark d-block mb-1">nativeName: {{ pais.nativeName }}</span>
