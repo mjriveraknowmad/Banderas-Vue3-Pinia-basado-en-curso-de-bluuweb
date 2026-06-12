@@ -1,0 +1,25 @@
+<script setup lang="ts">
+import { usePaisesStore } from '@/stores/paises'
+
+const store = usePaisesStore()
+
+const filtro = (region: string) => {
+  store.filtrarRegion(region)
+}
+</script>
+
+<template>
+  <div class="text-center">
+    <h3>Filtrar por Continente</h3>
+    <div class="btn-group mb-3">
+      <button class="btn btn-dark" @click="filtro('Americas')">AM</button>
+      <button class="btn btn-dark" @click="filtro('Europe')">EU</button>
+      <button class="btn btn-dark" @click="filtro('Asia')">AS</button>
+      <button class="btn btn-dark" @click="filtro('Oceania')">OC</button>
+      <button class="btn btn-dark" @click="filtro('Africa')">AF</button>
+      <button class="btn btn-dark" @click="filtro('')">ALL</button>
+    </div>
+  </div>
+</template>
+
+<style scoped></style>
