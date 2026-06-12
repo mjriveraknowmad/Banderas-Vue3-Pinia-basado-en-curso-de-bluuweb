@@ -2,8 +2,7 @@
 
 Está basado en el proyecto de la Sección 25: [curso versión 2020] Vuex y Composition API  (Vue CLI) del curso de https://www.udemy.com/course/curso-vue pero hecho con lo más actual.
 
-
-Perfecto. La migración está completa. Aquí está el resumen de lo que hice:
+Aquí está el resumen de lo que hice:
 
 - ✅ Uso de TypeScript al completo
 - ✅ Composition API con `<script setup>` (más moderno)
